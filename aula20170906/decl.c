@@ -1,22 +1,37 @@
+#include<stdio.h>
 int main ()
   {
-    int numero;
-    printf("entre com um numero: ");
-    scanf("%d", &numero);
-    if(numero%2)//impar, pois o 0 nos beats é falso
+    int divisor, x=0, z, a, soma;
+    int y= 1328+ rand()%(1360-1328+1);
+    int w= 0 + rand()%(99-1+1);
+    printf("digite um numero que seja divisor de 8192: ");
+    scanf("%d",divisor);
+    getchar();
+    if(8192%divisor)
     {
-        printf("numero impar.\n");
-        if(numero%5==0)
-            printf("numero multiplo de 5.\n");
+        printf("naum é divisor\n");
     }
     else
     {
-        printf("numero par.\n");
-        if(numero%3==0)
-        printf("numero multiplo de 3.\n");
-        if(numero%7==0)
-        printf("numero multiplo de 7.\n");
-
+        printf("o numero e divisor");
+        x++;
     }
-    return 0;
+    printf("digite o valor da soma de 101 a %d", y);
+    printf("\n");
+    scanf("%d", z); gatcher();
+    soma=101+y;
+    if(soma==z)
+        x++;
+    else
+        printf("a soma esta incorreta\n");
+    printf("multiplique %d por 3", w);
+    printf("\n");
+    scanf("%d",& a);
+    if(a== w*3);
+      {
+       printf("a resposta esta correta");
+       x++;
+      }
+    printf(" a contagem de pontos final é de:", x);
   }
+
