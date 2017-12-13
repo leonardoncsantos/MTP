@@ -9,7 +9,7 @@ int main ()
     getchar();
     if(8192%divisor)
     {
-        printf("naum é divisor\n");
+        printf("naum Ã© divisor\n");
     }
     else
     {
@@ -32,6 +32,6 @@ int main ()
        printf("a resposta esta correta");
        x++;
       }
-    printf(" a contagem de pontos final é de:", x);
+    printf(" a contagem de pontos final Ã© de:", x);
   }
 
