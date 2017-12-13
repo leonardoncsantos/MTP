@@ -2,8 +2,8 @@
 
 int main ()
   {
-     float ladotriangulo, areatriangulo;
-     printf("entre com o lado do triangulo: ");
+     float ladoquadrado, areaquadrado;
+     printf("entre com o lado do quadrado: ");
      scanf("%f",&ladoquadrado);
      printf(")
      areaquadrado= ladoquadrado*ladoquadrado;
