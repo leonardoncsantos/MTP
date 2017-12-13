@@ -2,23 +2,13 @@
 
 int main ()
   {
-    int numero;
-    printf("entre com um numero: ");
-    scanf("%d", &numero);
-    if(numero%2)//impar, pois o 0 nos beats é falso
-    {
-        printf("numero impar.\n");
-        if(numero%5==0)
-            printf("numero multiplo de 5.\n");
-    }
-    else
-    {
-        printf("numero par.\n");
-        if(numero%3==0)
-        printf("numero multiplo de 3.\n");
-        if(numero%7==0)
-        printf("numero multiplo de 7.\n");
-
-    }
+    float basetriangulo, alturatriangulo, areatriangulo;
+    printf("entre com a base do triangulo: ");
+    scanf("%f", &basetriangulo);
+    printf(" entre com a altura do triangulo: ");
+    scanf("%f", &alturatriangulo);
+    areatriangulo= (basetriangulo *alturatriangulo)/2;
+    printf(" a area do triangulo eh: %f", areatriangulo);
     return 0;
-  }
+}
+           
