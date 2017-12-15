@@ -1,19 +1,18 @@
 #include<stdio.h>
-int main ()
+#include<stdlib.h>
+#include<math.h>
+int main()
 {
-    int vetor={0x0F,0xFF,0xFFFF,0xFFFFFF,0x80000001,0xFFFFFFFF}
-    unsigned char *ponteiro
-    int nbytes=sizeof(vetor);
-    int i, contagem=0;
-    for(i=0; i<nbytes; i++)
-
+    unsigned char *ponteiro;
+    int vetor[]={0x0F,0xFF,0xFFFF,0xFFFFFF,0x80000001,0xFFFFFFFF}, i,nbytes=sizeof(vetor), cont=0;
+    printf("End inicial de vetor:%p\n\n", vetor);
+    for(i=0, ponteiro=(unsigned char*)vetor; i<nbytes; i++)
     {
-        if(ponteiro(i))
-            contagem++;
-        printf("End.: %p, dado: %d, %X\n", ponteiro +i, ponteiro[i], * (ponteiro+i));
+        printf("*End:%p=>%d(decimal); %x (hexadecimal)\n",ponteiro+i,*(ponteiro+i),ponteiro[i]);
+        if(ponteiro[i])
+            cont++;
+        printf("End:%p\ndado:%d,%x\n", ponteiro+i,ponteiro[i],*(ponteiro+i));
     }
-    printf("dos %d bytes, %d sao diferentes de 0x00.\n", nbytes, contagem);
-    return 0;
-    }
-
+    printf("De%d\nTEM 0x00:%d\n",nbytes, cont);
+    return EXIT_SUCCESS;
 }
