@@ -1,17 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 #include "matriz.h"
 
-int main()
-   {
-   int ordem, det;
-   Matriz A;
-   printf("entre com a ordem de uma matriz quadrada: %d\n");
-   scanf("&d", ordem);
-   printf("entre com os elementos da matriz : ");
-   A=criarMatriz (ordem,ordem);
-   preencherMatriz(A);
-   det= determinante(A);
-   printf ("o valor do determinante eh: %d", det);
-   return EXIT_SUCCESS;
-   }
+int main(){
+Matriz A;
+double a;
+int ordem;
+printf("write array order :  ");
+scanf("%d", &ordem);
+A=criarMatriz(ordem,ordem);
+preencherMatriz(A);
+printf("Original: \n");
+imprimirMatriz(A);
+a= determinante(A);
+printf("The Determinant is:\t%lf", a);
+return EXIT_SUCCESS;
+}
